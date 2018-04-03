@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<!link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+<!link href="https://fonts.googleapis.com/css?family=Neuton" rel="stylesheet">
+<!link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amiri:400,700" rel="stylesheet">
+
+<link rel="stylesheet" href="/static/style.css" type="text/css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<html>
+
+        
+        <title>Home - Michael Strath </title>
+        
+        
+    <style>
+        /* For mobile: */
+        
+            body {margin:0;}
+            
+            /* Style total navbar (z-index to put on top)*/
+            ul.nav-group {
+                list-style-type: none;
+                margin: 0 ;
+                padding: 0 ;
+                overflow: hidden;
+                background-color: #333;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 10;
+            }
+            
+            /* Define block elements */
+            .nav-group a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 16px;
+            text-decoration: none;
+            height:50px;
+            float: none;
+            display: block;
+            text-align: center;
+            border-right:none;
+            border-left:none;
+            }            
+            
+            .nav-group a:hover {
+            background-color: #daa520;
+            }
+            
+            /* Hides drop down, shows drop down icon */
+            .nav-group nav {display: none;}
+            
+            .nav-group a.icon {
+                float: right;
+                display: block;
+            }
+            
+            .nav-group a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            
+
+            
+            /* Styles the dropped down menu (appears through Javascript by modifying class)*/
+            .nav-group.appear a{
+                border-bottom:1px solid #FFDF00;
+                }
+           
+            .nav-group.appear nav {
+                display: block;
+                float:none;
+                }
+                
+            .nav-group.appear nav li a{
+                float:none;
+                display:block
+                } 
+                
+            .nav-group.appear nav li.endbut a
+                {border-bottom:none;
+            }
+            
+            .nav-group.appear a.icon {
+                float: right;
+                display: block;
+            }
+            
+            
+        @media only screen and (min-width: 1050px) {
+        /* For desktop: */
+        
+        .nav-group {
+            display:block;
+            justify-content: center;
+            
+            }
+            
+          .nav-group:first-child li{
+            float:left;
+            width:33.333333%;
+            }
+
+
+        .nav-group nav {
+            display: inline-block;
+            float:right;
+            border-bottom:none;
+            width:66.666666%
+            }
+
+          
+        .nav-group nav li a{
+            border-left: 1px solid #FFDF00;
+
+            }
+        .nav-group nav li.endbut
+                {float:right;
+                width:50%;
+            }  
+        .nav-group nav li.midbut
+            {
+            width:50%;
+            }   
+            
+        .nav-group a.icon {
+            display: none;
+        }    
+
+
+ 
+    </style>
+    
+    <script>
+    /* Toggle between adding and removing the "appear" class to nav when the user clicks on the icon */
+    function navFunction() {
+        var x = document.getElementById("navbar");
+        if (x.className === "nav-group") {
+            x.className += " appear";
+        } else {
+            x.className = "nav-group";
+        }
+    }
+    </script>
+    
+    <head >
+
+    <! Navigation Bar (unordered list)>
+    <ul class = 'nav-group' id = 'navbar'>
+        <! Elements (list items)>
+        <li><a href="/">Home</a></li>
+        
+        <! Dropdown icon>
+        <a href="javascript:void(0);" class="icon" onclick="navFunction()">&#9776;</a>
+        
+        <! Container of other elements>
+        <nav>
+                   
+                <li class='midbut' ><a href="/resume/">Resume</a></li>                
+
+                <li class='endbut' ><a href="/contact/">Contact</a></li>
+
+
+        </nav>
+        
+    </ul>
+    </head>
+    
+    <body>
+    <! Flashed message renderer>
+
+        
+          
+        
+
+            
+
+<style>
+
+
+
+.body-wrapper{
+    text-align:center;
+    padding:0px
+    }
+
+.headshot-wrapper{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding:0px 75px 10px 75px;
+    }
+    
+.reel-wrapper{
+    text-align:center
+    }
+    
+.reel{
+    width:100%;
+    height:250px;
+    }
+    
+.big-wrappers{
+    padding:25px 0px 25px 0px;
+    min-width:0px
+    }
+    
+@media only screen and (min-width: 1050px) {
+/* For desktop: */
+
+.body-wrapper{
+    padding:20px;
+    }
+
+.headshot-wrapper{
+    width:30.95%;
+    height:370.4px;
+    text-align:right;
+    position:absolute;
+    display: block;
+    padding:0px 0px 10px 0px;
+    }
+    
+.reel-wrapper{
+    width:68.05%;
+    float:right;
+    text-align:center;
+    }
+    
+.reel{
+    width:640px;
+    height:360px;
+    border-radius: 10px
+    }
+    
+
+
+}
+
+
+</style>
+
+<div class = 'big-wrappers'>
+    <div class ='big-name' >Michael Strath </div>
+</div>
+
+<div class='body-wrapper' >
+
+    <div class = 'headshot-wrapper'> 
+    
+        <div class='image-wrap'>      
+            <img src="/headshot.jpg/D:/Imps/Python/Acting/Generate/app/static/mainhead.jpeg "
+                 style = 'max-height:360px'> 
+        </div>
+        
+    </div>
+
+    <div class='reel-wrapper'>
+        <iframe src="https://player.vimeo.com/video/262074874"  
+                frameborder="0" 
+                class= 'reel'
+                webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+    </div>
+    
+</div> 
+
+  </body>
+
+</html>
+
+
