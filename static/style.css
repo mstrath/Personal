@@ -55,7 +55,7 @@ margin:0;
 .big-name{
     text-align:center;
     font-size:6vmax;
-    font-family:'Copperplate Gothic Bold',FGeorgia;
+    font-family:Copperplate Gothic Bold,Georgia;
     }
 
 @media only screen and (min-width: 1050px) {
@@ -68,7 +68,7 @@ margin:0;
 .big-name{
     text-align:center;
     font-size:68pt;
-    font-family:'Copperplate Gothic Bold',Georgia;
+    font-family:Copperplate Gothic Bold,Georgia;
     }
 }
 
