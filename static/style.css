@@ -8,7 +8,7 @@ box-sizing: border-box;
 }
 body {
 font-family: 'Amiri',Garamond;
-font-weight:700;
+font-weight:400;
 background-color: #f4fcff;  /* Background Color (000724)*/
 padding: 50px 0px 0px 0px; /*LoginBox to Other Element Dist*/
 margin:0;
@@ -55,7 +55,7 @@ margin:0;
 .big-name{
     text-align:center;
     font-size:6vmax;
-    font-family:Copperplate Gothic Bold,Georgia;
+    font-family: 'Amiri',Garamond;
     }
 
 @media only screen and (min-width: 1050px) {
@@ -68,8 +68,13 @@ margin:0;
 .big-name{
     text-align:center;
     font-size:68pt;
-    font-family:Copperplate Gothic Bold,Georgia;
+    font-family: 'Amiri',Garamond;
     }
+}
+
+.flexcont {
+    display: flex;
+    justify-content:space-around;
 }
 
 .col-1 {width: 8.33%;}
