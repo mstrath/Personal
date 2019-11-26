@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: michaelstrath.com
-Token: 43f0dd51cda8f9a3c57d47bdccecff5ad1c30f5baf0ff005481fa7b20487dcaa
